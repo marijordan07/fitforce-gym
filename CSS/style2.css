@@ -1,0 +1,660 @@
+:root {
+    /* Varibles de texto */
+    --fuente-principal: 'Mona Sans', sans-serif;
+    --peso-normal-parrafo: 400;
+    /* Variables de color */
+    --bg-btn-banner: #922A04;
+    /* Escritorio */
+    --tamaño-parrafo-escritorio: 17px;
+    --tamaño-menu-escritorio: 18px;
+    --h1-escritorio: 130px;
+    --h2-escritorio-banner: 30px;
+    --h1: 'Deventer';
+    --h2: 'Space Grotesk';
+    --h3: 'Space Grotesk';
+    --h3-escritorio: 25px;
+    --peso-menu: 200;
+    --btn-banner: 'Space Grotesk', sans-serif;
+
+    /* Tablet */
+    --tamaño-parrafo-tablet: 15px;
+    --h1: 'Deventer';
+    --tamaño-menu-tablet: 16px;
+    --peso-menu: 200;
+    --h1-tablet: 80px;
+    --h2-tablet-banner: 25px;
+    --h3-escritorio: 22px;
+    --btn-banner-tablet: 19px;
+
+    /* Movil */
+    --tamaño-parrafo-movil: 20px;
+    --h1: 'Deventer';
+    --tamaño-menu-movil: 14px;
+    --peso-menu: 200;
+    --h1-movil: 70px;
+    --h2-escritorio-banner: 22px;
+    --h3-escritorio: 20px;
+    --btn-banner-escritorio: 17px;
+}
+
+@font-face {
+    font-family: 'Deventer';
+    src: url('../fonts/Deventer - PERSONAL USE.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--fuente-principal);
+}
+
+body,
+html {
+    background: #000;
+    font-family: var(--fuente-principal);
+    height: 100%;
+}
+
+/* MENÚ GLASS */
+nav.glass-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    position: fixed;
+    gap: 20px;
+    top: 0;
+    left: 50%;
+    width: 100%;
+    z-index: 3;
+    transform: translateX(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px 30px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.nav-option {
+    text-decoration: none;
+    text-align: center;
+    text-transform: capitalize;
+    color: #fff;
+    border-bottom: 1px solid #FDC0AA;
+    font-family: var(--fuente-principal);
+    font-size: var(--tamaño-menu-escritorio);
+    font-weight: var(--peso-menu);
+    transition: all 0.3s ease;
+    margin-left: 15px;
+}
+
+nav.glass-menu img {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+nav.glass-menu a:hover {
+    font-weight: 300;
+    background: #F15D29;
+    border-radius: 20px;
+    padding: 3px 13px;
+    transform: scale(1.05);
+}
+
+
+/* Logo */
+.logo {
+    width: 55px;
+    height: 55px;
+}
+
+.bars {
+    display: none;
+}
+
+/* Seccion banner */
+.container h2 {
+    color: #fff;
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/parejaentrenando.jpg) no-repeat center center;
+
+}
+
+.hero-body {
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.hero-body .title {
+    letter-spacing: 4px;
+    font-family: 'Deventer';
+    font-size: 80px;
+    text-align: center;
+    color: #EF4923;
+    
+    text-transform: uppercase;
+}
+
+.hero-body .subtitle {
+    font-family: 'Space Grotesk';
+    font-weight: 800;
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+/* Seccion del calentamiento */
+
+
+
+/* Seccion footer */
+.footer {
+    display: flex;
+    width: 100%;
+    background: #000;
+    height: 50vh;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 2px solid #912d09;
+    padding-left: 30px;
+    width: 100%;
+}
+
+.img-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-footer h3 {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.info-gym {
+    margin-left: 50px;
+}
+
+.info-gym .menu-footer {
+    display: flex;
+    gap: 15px;
+}
+
+.info-gym .menu-footer a {
+    color: #fff;
+    font-family: 'Mona Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-top: 15px;
+}
+
+.menu-footer a:hover {
+    text-align: center;
+    background: #C6604A;
+    padding: 4px 5px 4px 5px;
+    border-radius: 10px;
+    transform: scale(1.05);
+    box-shadow: 0 0 5px #c54f0b, 0 0 10px #c54f0b, 0 0 20px #c54f0b;
+    animation: palpitar 0.6s ease-in-out;
+}
+
+/* Column Contacto */
+.contact {
+    margin-left: 250px;
+}
+
+.contacto,
+.email {
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.whatsapp,
+.correo {
+    display: flex;
+    padding: 15px;
+    margin-right: 10px;
+}
+
+.contacto .whatsapp img,
+.email .correo img {
+    width: 25px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
+}
+
+.whatsapp h4,
+.email h4 {
+    font-size: var(-h3);
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    color: #fff;
+}
+
+.ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    border-radius: 20px;
+    background: #EF4923;
+    width: 250px;
+    height: 30px;
+    cursor: pointer;
+    transition: 0.3s, transform 0.3s;
+}
+
+.ubicacion h4 {
+    font-size: var(-h3);
+    font-family: 'Space Grotesk';
+    font-weight: 400;
+    color: #fff;
+}
+
+.ubicacion img {
+    width: 25px;
+    margin-right: 15px;
+    filter: brightness(0) invert(1);
+}
+
+.location .ubicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 20px;
+    background: #EF4923;
+    width: 250px;
+    height: 30px;
+    color: white;
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+}
+
+/* Animacion boton de ubicacion */
+@keyframes spinEffect {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+
+    50% {
+        transform: rotate(360deg) scale(1.1);
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+    }
+}
+
+.ubicacion.clicked {
+    animation: spinEffect 0.6s ease;
+}
+
+.info-designer {
+    width: 100%;
+    height: 60px;
+    background: #cd400c;
+}
+
+.info-designer p {
+    padding: 20px 0 0 0;
+    color: #fff;
+    text-align: center;
+    font-family: var(--h3);
+    font-size: var(--h3-tablet);
+    text-transform: uppercase;
+}
+
+/* Boton de volver hacia arriba */
+#scrollTopBtn {
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #EF4923;
+    color: white;
+    cursor: pointer;
+    padding: 12px 16px;
+    border-radius: 4px;
+    font-size: 18px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#scrollTopBtn:hover {
+    background-color: #7a352f;
+}
+
+/* Mostrar el botón cuando el usuario hace scroll */
+#scrollTopBtn.show {
+    opacity: 1;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* Menu nav bar */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(50px);
+        -webkit-backdrop-filter: blur(50px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        text-align: center;
+        z-index: 100;
+        max-height: 0;
+        overflow: hidden;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .nav-links.active {
+        max-height: 500px;
+        opacity: 1;
+        transform: translateY(0);
+        padding: 20px;
+        pointer-events: auto;
+    }
+
+    .nav-option {
+        font-size: 17px;
+        font-weight: 400;
+        text-transform: capitalize;
+        border-bottom: none;
+    }
+
+    @keyframes dropDown {
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        80% {
+            transform: translateY(5px);
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    .nav-links.active {
+        animation: dropDown 0.5s ease;
+        max-height: 500px;
+        opacity: 1;
+        pointer-events: auto;
+        padding: 20px;
+    }
+
+    .glass-menu .bars img {
+        width: 30px;
+        cursor: pointer;
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(0deg);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    /* Seccion Banner  */
+    .hero {
+        background: url(/fitforce-code-original/img/parejaentrenando.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    .hero-body {
+        margin-top: 120px;
+        padding: 0 1rem;
+    }
+
+    .title h3{
+        font-size: 60px;
+        letter-spacing: 3px;
+    }
+
+    .hero-body .subtitle {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .hero {
+        height: 70vh;
+        padding: 4rem 1rem;
+    }
+
+    .hero-body {
+        margin-top: 100px;
+    }
+
+    .hero-body .title {
+        font-size: 42px;
+        letter-spacing: 2px;
+    }
+
+    .hero-body .subtitle {
+        font-size: 18px;
+    }
+
+    .title.is-3 {
+        font-size: 20px;
+    }
+    /* Boton para volver hacia arriba */
+    #scrollTopBtn{
+        right: 70px;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+
+    .hero{
+        background: url(../img/parejaentrenando.jpg) no-repeat center center;
+        background-size: cover;
+    }
+
+    /* Clase Column es de los videos */
+    .column {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image iframe{
+        width: 400px;
+        padding: 0 50px 0 0 ;
+    }
+
+    #scrollTopBtn{
+        right: 70px
+    }
+
+
+
+    /* Footer */
+    .footer {
+        padding: 10px;
+    }
+
+    .img-logo img {
+        width: 100px;
+    }
+
+    .logo-footer h3 {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .info-gym .menu-footer a {
+        font-size: 14px;
+    }
+
+    .contacto,
+    .email {
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .whatsapp,
+    .correo {
+        padding: 10px;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .whatsapp h4,
+    .email h4,
+    .ubicacion h4 {
+        font-size: 14px;
+    }
+
+    .ubicacion {
+        width: 90%;
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .ubicacion img {
+        margin-right: 8px;
+    }
+
+    .info-designer {
+        background: #000;
+    }
+
+    .info-designer p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    /* Clase Column es de los videos */
+    .column {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image iframe{
+        width: 390px;
+        padding: 0;
+    }
+
+
+    /* Footer */
+    footer{
+        display: block;
+    }
+
+    .img-logo img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    .logo-footer h3 {
+        display: none;
+    }
+    
+    .info-gym{
+        width: 50%;
+        padding-right: 50px;
+    }
+    .info-gym .menu-footer{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        padding-right: 10px;
+    }
+
+    .info-gym .menu-footer a {
+        
+        text-align: center;
+        font-size: 14px;
+        margin-right: 5px;
+    }
+
+    .contact{
+        margin: 0;
+    }
+
+    .contacto,
+    .email {
+        flex-direction: wrap;
+        align-items: center;
+        padding-bottom: 10px;
+    }
+
+    .whatsapp,
+    .correo {
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+    }
+
+    .whatsapp h4,
+    .email h4,
+    .ubicacion h4 {
+        font-size: 14px;
+    }
+
+    .ubicacion {
+        width: 100%;
+        max-width: 250px;
+        height: auto;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .ubicacion img {
+        margin-right: 8px;
+    }
+
+    .info-designer {
+        background: #912d09;
+    }
+
+    .info-designer p {
+        font-size: 14px;
+    }
+}

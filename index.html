@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="FitForce es el gimnasio ideal para principiantes, intermedios y avanzados. Mejora tu vitalidad, fuerza y equilibrio con pesas, clases grupales y entrenamientos personalizados. ¡Activa tu mejor versión!">
+    <title>FitForce | Fuerza, equilibrio y vitalidad en cada entrenamiento</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg" href="img/favicon.svg">
+    <!-- CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <!-- Google fonts -->
+    <link rel="stylesheet"
+        href='https://fonts.googleapis.com/css2?family=Mona+Sans:ital,wght@0,200..900;1,200..900&display=swap'>
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <!-- Inicio NavBar -->
+    <nav class="glass-menu">
+        <img src="img/logo2blanco.svg" alt="Logo oficial del sitio web" class="logo">
+        <div class="nav-links" id="navLinks">
+            <a href="index3.html#family" class="nav-option" target="_blank">Quiénes Somos</a>
+            <a href="#services" class="nav-option">Servicios</a>
+            <a href="#rutines" class="nav-option">Rutinas</a>
+            <a href="https://web.whatsapp.com/" class="nav-option" target="_blank">Contacto</a>
+            <a href="index2.html" class="nav-option" target="_blank">Entrena En Casa</a>
+        </div>
+        <div class="bars" id="menuToggle">
+            <img src="img/menu-bars.svg" alt="Icono de menú hamburguesa">
+        </div>
+    </nav>
+    <!-- Final Navbar -->
+
+    <!-- Inicio Carrusel Banner -->
+    <div class="carousel-container">
+        <div class="carousel-slides" id="carousel">
+            <div class="carousel-slide carousel-slide-1">
+                <h1>VITALIDAD</h1>
+                <h2>TU MEJOR VERSIÓN EMPIEZA AQUÍ</h2>
+                <a href="index3.html" class="button-neon-1" target="_blank">
+                    <img src="img/pesa.svg" alt="Icono de pesa color negro" class="icono-pesa">
+                    Sobre Fit Force
+                </a>
+                <!-- Redes Sociales -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/mariajesus.jordangranados?locale=es_LA" target="_blank"><img
+                            src="img/facebook.svg" alt="Icono de facebook" class="facebook"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.svg"
+                            alt="Icono de whatsapp" class="chat"></a>
+                    <a href="https://www.instagram.com/jordan_maria07/" target="_blank"> <img src="img/instagram.svg"
+                            alt="Icono de instagram" class="instagram"></a>
+                </div>
+                <img src="img/carrusel1.png"
+                    alt="Imagen 1 del banner carrusel, es una mujer joven levantando una pesa de 90 lbs">
+            </div>
+            <!-- Carrusel 2 -->
+            <div class="carousel-slide carousel-slide-2">
+                <h1>EQUILIBRIO</h1>
+                <h2>HOY NO SERÁ FÁCIL, PERO VALDRÁ LA PENA</h2>
+                <a href="index3.html" class="button-neon-2" target="_blank">
+                    <img src="img/pesa.svg" alt="Icono de pesa para entrenar" class="icono-pesa">
+                    Sobre Fit Force
+                </a>
+                <!-- Redes Sociales -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/mariajesus.jordangranados?locale=es_LA" target="_blank"><img
+                            src="img/facebook.svg" alt="Icono de facebook" class="facebook"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.svg"
+                            alt="Icono de whatsapp" class="chat"></a>
+                    <a href="https://www.instagram.com/jordan_maria07/" target="_blank"> <img src="img/instagram.svg"
+                            alt="Icono de instagram" class="instagram"></a>
+                </div>
+                <img src="img/carrusel2.png"
+                    alt="Imagen 2 del banner carrusel, joven entrenando con unas cuerdas que golpean en suelo">
+            </div>
+            <div class="carousel-slide carousel-slide-3">
+                <h1>FUERZA</h1>
+                <h2>TRANSFORMA EL CANSANCIO EN PODER</h2>
+                <a href="index3.html" class="button-neon-3" target="_blank">
+                    <img src="img/pesa.svg" alt="Icono de pesa para entrenar" class="icono-pesa">
+                    Sobre Fit Force
+                </a>
+                <!-- Redes Sociales -->
+                <div class="social-media">
+                    <a href="https://www.facebook.com/mariajesus.jordangranados?locale=es_LA" target="_blank"><img
+                            src="img/facebook.svg" alt="Icono de facebook" class="facebook"></a>
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="img/whatsapp.svg"
+                            alt="Icono de whatsapp" class="chat"></a>
+                    <a href="https://www.instagram.com/jordan_maria07/" target="_blank"> <img src="img/instagram.svg"
+                            alt="Icono de instagram" class="instagram"></a>
+                </div>
+                <img src="img/carrusel3.png"
+                    alt="Imagen 3 del banner carrusel, es un hombre joven que está de perfil levantando unas mancuernas en cada lado">
+            </div>
+        </div>
+    </div>
+    <!-- Final del carrusel -->
+    <!-- Inicio Seccion Coaches -->
+    <section class="coaches-section">
+        <h2>Conocé a nuestros entrenadores</h2>
+
+        <div class="coach">
+            <img src="img/entrenador1.png" alt="Juan Morales">
+            <div class="coach-info">
+                <h3>Juan Morales</h3>
+                <p class="rol">Director Técnico General</p>
+                <p>Con más de 10 años de experiencia en el mundo del fitness, Juan es licenciado en Ciencias del Deporte
+                    y especialista en entrenamiento de fuerza y alto rendimiento. Dirige la planificación general de
+                    FitForce y supervisa todos los programas de entrenamiento. Su enfoque combina disciplina, técnica y
+                    motivación para obtener resultados reales.</p>
+            </div>
+        </div>
+
+        <div class="coach reverse">
+            <img src="img/entrenadora1.png" alt="Valeria Rojas">
+            <div class="coach-info">
+                <h3>Valeria Rojas</h3>
+                <p class="rol">Coordinadora de Clases Grupales</p>
+                <p>Instructora certificada en HIIT, Zumba y funcional, Valeria aporta energía y dinamismo a cada sesión
+                    grupal. Cuenta con formación en educación física y más de 6 años de experiencia guiando a personas
+                    de todos los niveles. Su pasión es ayudar a los usuarios a mejorar su salud mientras se divierten
+                    entrenando.</p>
+            </div>
+        </div>
+
+        <div class="coach">
+            <img src="img/entrenador2.png" alt="Andrés López">
+            <div class="coach-info">
+                <h3>Andrés López</h3>
+                <p class="rol">Especialista en Pesas y Rehabilitación</p>
+                <p>Graduado en fisioterapia con certificaciones en entrenamiento con pesas y biomecánica deportiva.
+                    Andrés combina fuerza y prevención de lesiones en cada rutina. En FitForce es el encargado de
+                    asesorar a quienes buscan ganar masa muscular de forma segura o recuperarse de lesiones.</p>
+            </div>
+        </div>
+
+        <div class="coach reverse">
+            <img src="img/entrenadora2.png" alt="Carolina Jiménez">
+            <div class="coach-info">
+                <h3>Carolina Jiménez</h3>
+                <p class="rol">Entrenadora de Nuevos Ingresos</p>
+                <p>Carolina es licenciada en acondicionamiento físico y coach certificada para principiantes. Su
+                    especialidad es acompañar a quienes comienzan desde cero, guiándolos con paciencia, técnica y
+                    motivación. En FitForce, se asegura de que cada nuevo miembro se sienta acompañado desde el primer
+                    día.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Final Seccion Coaches -->
+    <!-- Servicios -->
+    <section class="servicios" id="services">
+        <h2>Nuestros Servicios</h2>
+        <p class="intro-servicios">
+            En nuestro gimnasio ofrecemos mucho más que máquinas: te acompañamos en cada paso de tu transformación.
+        </p>
+
+        <div class="lista-servicios">
+            <div class="servicio">
+                <img src="img/imgcard3.png" alt="">
+                <h3>Entrenamiento Personalizado</h3>
+                <p>Rutinas adaptadas a tus metas, guiadas por profesionales certificados.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="img/imgcard1.png" alt="">
+                <h3>Clases Funcionales</h3>
+                <p>Mejora tu condición física con sesiones dinámicas y efectivas.</p>
+            </div>
+
+            <div class="servicio">
+                <img src="img/imgcard2.png" alt="">
+                <h3>Asesoría Nutricional</h3>
+                <p>Planes alimenticios equilibrados para potenciar tus resultados.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Inicio seccion disciplina-->
+    <section class="glass-carousel-section" id="rutines">
+        <h3>CONSTRUYE TU DISCIPLINA</h3>
+        <div class="carousel-calendar-wrapper">
+            <div class="carousel-wrapper">
+                <button class="arrow left" onclick="scrollCarousel(-1)">❮</button>
+                <div class="glass-carousel" id="glassCarousel">
+                    <div class="glass-card">
+                        <h5>3 grandes beneficios con esta rutina nivel principiante:</h5>
+                        <p>1. ¡Despierta tu Potencial y Tonifica tu Cuerpo Desde Cero! Verás cómo tus músculos se
+                            tonifican,
+                            tu postura mejora y sientes más energía para afrontar tu día a día. ¡Es tu primer paso hacia
+                            un
+                            cuerpo más fuerte y definido!</p>
+                        <p>2. Aumenta tu Energía y Vitalidad Sin Sacrificar Horas: Diseñada para ser eficiente y
+                            efectiva en
+                            solo 30-40 minutos, esta rutina te inyectará una dosis de vitalidad que durará todo el día.
+                            Di adiós al cansancio y hola a una mente más clara y un espíritu más enérgico.</p>
+                        <p>3. Fortalece tu Mente, Reduce el Estrés y Siéntete Increíble: El ejercicio no es solo físico.
+                            Al
+                            completar cada ronda, sentirás una poderosa sensación de logro que reforzará tu confianza.
+                            Además, liberarás endorfinas que te ayudarán a reducir el estrés y a dormir mejor. </p>
+                        <a href="/documentos/Rutina Principiante.pdf" class="gradient-border-button"
+                            download="Rutina Principiante">
+                            <img src="img/arm-flex.svg" alt="Icono de brazo flexionado">
+                            BAJA TU PLAN
+                        </a>
+                    </div>
+                    <div class="glass-card">
+                        <h5>3 grandes beneficios con esta rutina nivel intermedio:</h5>
+                        <p>1. Esta rutina está diseñada con ejercicios que trabajan grupos musculares grandes y
+                            funcionales.
+                            Los movimientos de esta rutina fortalecen músculos que usas a diario. Además, como no
+                            necesitas
+                            equipo, puedes desarrollar fuerza con tu propio peso corporal.</p>
+                        <p>2. Mayor resistencia cardiovascular y muscular. El formato tipo circuito, con poco descanso
+                            entre
+                            ejercicios, obliga al corazón y los músculos a trabajar de forma continua. Esto ayuda a
+                            mejorar
+                            la capacidad cardiovascular mientras tonificas tu cuerpo. </p>
+                        <p>3. Mejor control corporal y coordinación. Algunos ejercicios de la rutina requieren
+                            estabilidad,
+                            equilibrio y coordinación. Esto entrena tu sistema nervioso además de tus músculos, haciendo
+                            que
+                            te muevas con mayor control y seguridad. </p>
+                        <a href="/documentos/Rutina intermedio.pdf" class="gradient-border-button"
+                            download="Rutina Intermedio">
+                            <img src="img/arm-flex.svg" alt="Icono de brazo flexionado">
+                            BAJA TU PLAN
+                        </a>
+                    </div>
+                    <div class="glass-card">
+                        <h5>3 grandes beneficios con esta rutina nivel avanzado:</h5>
+                        <p>1. Desarrollo muscular específico y definido. Esta rutina incluye ejercicios más retadores y
+                            precisos, que trabajan grupos musculares de forma más intensa. Esto estimula el crecimiento
+                            y
+                            definición muscular, ayudando a mejorar la forma del cuerpo.
+                        </p>
+                        <p>2. Alta quema calórica y control de composición corporal. El nivel avanzado exige mayor gasto
+                            energético, lo que acelera la quema de grasa corporal durante y después del entrenamiento.
+                            Esta
+                            rutina favorece una mejor relación músculo-grasa, algo clave para quienes buscan definición,
+                            bajar de peso.</p>
+                        <p>3. Los movimientos avanzados, que combinan fuerza y velocidad, ayudan a mejorar habilidades
+                            atléticas como la agilidad y la resistencia. Esto no solo es útil para entrenar mejor, sino
+                            también para otras actividades deportivas y funcionales del día a día. </p>
+                        <a href="/documentos/Rutina Avanzado.pdf" class="gradient-border-button"
+                            download="Rutina Avanzado">
+                            <img src="img/arm-flex.svg" alt="Icono de brazo flexionado">
+                            BAJA TU PLAN
+                        </a>
+                    </div>
+                </div>
+                <button class="arrow right" onclick="scrollCarousel(1)">❯</button>
+            </div>
+        </div>
+    </section>
+    <!-- Final seccion disciplina-->
+    <!-- Seccion Antes vs despues del gym -->
+
+    <!-- Final seccion aantes vs despues -->
+    <!-- Seccion Alimentacion -->
+    <section class="alimentacion">
+        <h2>Planes de Alimentación Semanal</h2>
+        <p class="intro-alimentacion">
+            Elige el plan que mejor se adapte a tu estilo de vida y objetivos. Cada opción está diseñada por
+            profesionales en nutrición para complementar tu entrenamiento.
+        </p>
+
+        <div class="opciones-alimentacion">
+            <div class="opcion">
+                <h3>Opción 1: Pérdida de Grasa</h3>
+                <p>Plan balanceado enfocado en reducir el porcentaje de grasa corporal. Incluye alimentos bajos en
+                    carbohidratos simples, ricos en fibra y proteínas magras.</p>
+                <a href="documentos/Menu-perdida-grasa.pdf" class="btn-descargar" download>Descargar PDF</a>
+            </div>
+
+            <div class="opcion">
+                <h3>Opción 2: Ganancia Muscular</h3>
+                <p>Diseñado para apoyar el desarrollo de masa muscular. Contiene mayor aporte de proteínas y
+                    carbohidratos complejos distribuidos a lo largo del día.</p>
+                <a href="documentos/menu-masa-muscular.pdf" class="btn-descargar" download>Descargar PDF</a>
+            </div>
+
+            <div class="opcion">
+                <h3>Opción 3: Mantenimiento Saludable</h3>
+                <p>Ideal para quienes desean mantener su peso actual de forma saludable. Incluye variedad de alimentos,
+                    porciones moderadas y enfoque en hábitos sostenibles.</p>
+                <a href="documentos/menu-mantenimiento-saludable.pdf" class="btn-descargar" download>Descargar PDF</a>
+            </div>
+        </div>
+    </section>
+    <!-- Final seccion alimentacion -->
+    <!-- Inicio Seccion Comentarios -->
+    <section class="comment">
+
+        <div class="bg-comment">
+            <h3 class="typewriter">GRACIAS</h3>
+            <h3 class="typewriter">GRACIAS</h3>
+            <h3 class="typewriter">GRACIAS</h3>
+            <h3 class="typewriter">GRACIAS</h3>
+            <h3 class="typewriter">GRACIAS</h3>
+        </div>
+        <h2 class="comment-title">COMENTARIOS DE LA COMUNIDAD FITFORCE</h2>
+        <!-- Comentario 1 -->
+        <div class="box-coment">
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img src="img/user1.png"
+                            alt="Foto de perfil de un usuario 1 del gimansio que comenta sobre el servicio." />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content-comment">
+                        <p>
+                            <strong>Dylan Montero</strong> <br> <small>dylanmontero@gmail.com</small>
+                            <br><small>31m</small>
+                            <br />
+                            "Llevo varios meses entrenando aquí y la verdad es que estoy súper contento. Las
+                            instalaciones
+                            son modernas y siempre están limpias, el equipo de entrenadores es muy profesional y amable,
+                            y
+                            me han ayudado a mejorar mi técnica y a mantener la motivación. Además, la variedad de
+                            clases es
+                            excelente, siempre encuentro algo que se adapta a mi ritmo y objetivos. ¡Recomiendo este
+                            gimnasio a cualquiera que quiera mejorar su salud y ponerse en forma!"
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Comentario 2 -->
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img src="img/user2.png"
+                            alt="Foto de perfil de un usuario 2 del gimansio que comenta sobre el servicio." />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content-comment">
+                        <p>
+                            <strong>Cindy Granados</strong> <br> <small>cingranados18@gmail.com</small>
+                            <br><small>3h</small>
+                            <br />
+                            "Este gimnasio ha sido un gran descubrimiento. Me encantan las clases dirigidas, sobre todo
+                            las de funcional y yoga. Las entrenadoras son muy profesionales y te hacen sentir cómoda
+                            desde el primer día. Además, me siento segura entrenando aquí, el espacio está bien
+                            iluminado, limpio y todo muy bien organizado. ¡Lo recomiendo totalmente, sobre todo para
+                            mujeres que buscan un ambiente amigable y motivador!"
+                        </p>
+                    </div>
+                </div>
+            </article>
+            <!-- Comentario 3 -->
+            <article class="media">
+                <div class="media-left">
+                    <figure class="image is-64x64">
+                        <img src="img/user3.png"
+                            alt="Foto de perfil de un usuario 3 del gimansio que comenta sobre el servicio." />
+                    </figure>
+                </div>
+                <div class="media-content">
+                    <div class="content-comment">
+                        <p>
+                            <strong>Andrés Arias</strong> <br> <small>aarias7@gmail.com</small>
+                            <br><small>2 h</small>
+                            <br />
+                            "Desde que me uní al gimnasio, mi rutina ha cambiado por completo. Antes me costaba mantener
+                            la constancia, pero aquí me siento motivado todos los días. El ambiente es muy positivo, el
+                            equipo es atento y siempre dispuesto a ayudarte, y los aparatos están en excelente estado.
+                            Me gusta que nunca está demasiado lleno, así que puedo entrenar tranquilo y sin esperar."
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <!-- Final Seccion Comentarios -->
+    <!-- Inicio Calculadora de IMC -->
+    <section class="calculadora">
+        <h2>Come con Propósito</h2>
+        <div class="IMC">
+            <div class="containerCalc">
+                <h3>Calculadora de Calorías</h3>
+
+                <label>Edad</label>
+                <input type="number" id="edad" min="10" max="100" />
+
+                <label>Sexo</label>
+                <select id="sexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                </select>
+
+                <label>Peso (kg)</label>
+                <input type="number" id="peso" min="30" max="200" />
+
+                <label>Estatura (cm)</label>
+                <input type="number" id="estatura" min="120" max="250" />
+
+                <label>Actividad física</label>
+                <select id="actividad">
+                    <option value="1.2">Sedentario (poco o nada de ejercicio)</option>
+                    <option value="1.375">Ligero (1-3 días a la semana)</option>
+                    <option value="1.55">Moderado (3-5 días a la semana)</option>
+                    <option value="1.725">Intenso (6-7 días a la semana)</option>
+                    <option value="1.9">Muy intenso (2 veces al día)</option>
+                </select>
+
+                <button class="btnCalculadora" onclick="calcularCalorias()">Calcular</button>
+
+                <div class="result" id="resultado" style="display:none;"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Final calculadora de imc -->
+    <!-- Inicio seccion cambios -->
+    <section class="resultados">
+        <h2>Transformaciones Reales</h2>
+        <p class="descripcion-resultados">
+            Estos son algunos de los resultados que han logrado nuestros miembros con esfuerzo, constancia y disciplina.
+        </p>
+
+        <div class="contenedor-resultados">
+            <div class="card-resultado">
+                <img src="img/resultado2.jpg" alt="Resultado usuario 1">
+                <h3>Marco · Tonificación Total</h3>
+                <p>“Gracias al entrenamiento personalizado y el apoyo del equipo, recuperé mi energía y confianza.”</p>
+            </div>
+
+            <div class="card-resultado">
+                <img src="img/resultado3.jpg" alt="Resultado usuario 2">
+                <h3>Daniela · +6 kg músculo</h3>
+                <p>“Nunca imaginé ganar masa muscular tan rápido. Aquí aprendí a entrenar y alimentarme bien.”</p>
+            </div>
+
+            <div class="card-resultado">
+                <img src="img/resultado4.jpg" alt="Resultado usuario 3">
+                <h3>Sofía · -15 kg</h3>
+                <p>“En pocos meses vi resultados reales. Me siento fuerte, saludable y feliz con mi cuerpo.”</p>
+            </div>
+
+            <div class="card-resultado">
+                <img src="img/resultado5.jpg" alt="Resultado usuario 3">
+                <h3>Gerardo · - 12kg</h3>
+                <p>“En pocos meses vi resultados reales. Me siento fuerte, saludable y feliz con mi cuerpo.”</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final seccion cambios -->
+
+
+
+    <!-- Seccion Musica  -->
+    <section class="play">
+        <h2>DALE PLAY AL ENTRENO</h2>
+        <p>Escanea el código y entrena al ritmo de las mejores playlists de Spotify.</p>
+        <div class="music-section">
+            <div class="dale-play">
+                <img src="img/cardspotify2.png" alt="Card Spotify Entrenamiento">
+                <img src="img/codigo1.png" alt="Codido de barras Spotify para escanear">
+            </div>
+            <div class="dale-play">
+                <img src="img/cardspotify3.png" alt="Card Spotify Entrenamiento ">
+                <img src="img/codigo2.png" alt="Codido de barras Spotify para escanear">
+            </div>
+            <div class="dale-play">
+                <img src="img/cardspotify4.png" alt="Card Spotify Entrenamiento ">
+                <img src="img/codigo3.png" alt="Codido de barras Spotify para escanear">
+            </div>
+        </div>
+    </section>
+    <!-- Final seccion musica -->
+    <!-- Inicio Footer -->
+    <footer>
+        <div class="footer">
+            <div class="info-gym">
+                <div class="logo-footer">
+                    <div class="img-logo">
+                        <img src="img/logo2blanco.svg" alt="Logo oficial del gimnasio en color blanco con naranaja">
+                    </div>
+                    <h3>Más que fitness, somos comunidad.</h3>
+                </div>
+                <div class="menu-footer">
+                    <a href="#family">Quiénes Somos</a>
+                    <a href="#services">Servicios</a>
+                    <a href="#rutines">Rutinas Por Nivel</a>
+                    <a href="https://web.whatsapp.com/">Contacto</a>
+                    <a href="/index2.html" target="_blank">Entrena En Casa</a>
+                </div>
+            </div>
+            <!-- Contacto -->
+            <div class="contact">
+                <div class="contacto">
+                    <div class="whatsapp">
+                        <img src="img/whatsapp.svg" alt="Icono de whatsapp">
+                        <h4>Contácto: <br> 8412-7396</h4>
+                    </div>
+                </div>
+                <div class="email">
+                    <div class="correo">
+                        <img src="img/email.svg" alt="Icono de correo">
+                        <h4>Correo: <br> info@fitness.com</h4>
+                    </div>
+                </div>
+                <a href="https://www.google.com/maps/place/Fit+Center/@9.6608361,-84.0243568,17z/data=!3m1!4b1!4m6!3m5!1s0x8fa111001de7bfff:0xad5be88636e0046b!8m2!3d9.6608361!4d-84.0217765!16s%2Fg%2F11wfn0c3t0?entry=ttu&g_ep=EgoyMDI1MDcwOS4wIKXMDSoASAFQAw%3D%3D"
+                    target="_blank" rel="noopener noreferrer" class="location">
+                    <div class="ubicacion">
+                        <img src="img/map-location.svg" alt="Icono de mapa y ubicación">
+                        <h4>Fit Force, Heredia.</h4>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="info-designer">
+            <p>Sitio diseñado por María Jesús Jordan Granados. Todos los derechos reservados © 2025.</p>
+        </div>
+    </footer>
+    <!-- Final footer -->
+    <!-- Boton volver hacia arriba -->
+    <button id="scrollTopBtn" title="Volver arriba">↑</button>
+
+
+
+
+    <script src="js/script.js"></script>
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+</body>
+
+</html>
